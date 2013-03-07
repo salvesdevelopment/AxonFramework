@@ -1,0 +1,28 @@
+import org.axonframework
+import com.google
+
+id OrderId > String
+
+value object Name (
+         raw : String
+)
+
+// testing
+/* This
+is
+a block comment
+and is ignored by the parser */
+
+abstract event MyEvents
+
+event MyOtherEvent > MyEvents (
+         id : OrderId[],
+         number : double,
+         customerName : String) {
+
+         // this is a code block
+         public void myCustomMethod() {
+            System.out.println("Hello \n 'world'");
+         }
+
+         }
