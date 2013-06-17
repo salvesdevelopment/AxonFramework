@@ -33,7 +33,7 @@ public class SimpleJpaEventSourcedAggregate extends AbstractAnnotatedAggregateRo
     @Basic
     private long counter;
     @Id
-    private final String identifier;
+    private String identifier;
 
     public SimpleJpaEventSourcedAggregate() {
         identifier = UUID.randomUUID().toString();
