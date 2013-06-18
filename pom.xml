@@ -319,20 +319,18 @@
 
     <!-- deploy and release configuration -->
     <distributionManagement>
-        <snapshotRepository>
-            <id>sonatype</id>
-            <url>http://oss.sonatype.org/content/repositories/snapshots</url>
-            <uniqueVersion>true</uniqueVersion>
-        </snapshotRepository>
-        <repository>
-            <id>sonatype</id>
-            <url>http://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-            <uniqueVersion>false</uniqueVersion>
-        </repository>
+		<snapshotRepository>
+			<id>salves</id>
+			<url>http://ec2-50-19-251-174.compute-1.amazonaws.com:8080/nexus/content/repositories/salves-snapshots/</url>
+		</snapshotRepository>
+		<repository>
+			<id>salves</id>
+			<url>http://ec2-50-19-251-174.compute-1.amazonaws.com:8080/nexus/content/repositories/salves/</url>
+		</repository>
     </distributionManagement>
     <scm>
-        <connection>scm:git:git://github.com/AxonFramework/AxonFramework.git</connection>
-        <developerConnection>scm:git:git@github.com:AxonFramework/AxonFramework.git</developerConnection>
+        <connection>scm:git:git://bitbucket.org/salvesdevelopment/AxonFramework.git</connection>
+        <developerConnection>scm:git:git@bitbucket.org:salvesdevelopment/AxonFramework.git</developerConnection>
         <url>https://github.com/AxonFramework/AxonFramework</url>
         <tag>HEAD</tag>
     </scm>
